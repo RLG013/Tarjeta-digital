@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tarjeta digital - Rodrigo Leandro Gonzalez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg-page: #f6f2e9;
+      --bg-card: #fffaf3;
+      --naranja: #f57a1f;
+      --texto-principal: #222222;
+      --texto-secundario: #555555;
+      --borde-suave: rgba(0, 0, 0, 0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--bg-page);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      max-width: 420px;
+      width: 100%;
+      padding: 18px 18px 20px;
+    }
+
+    .top-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 72px;
+      height: 28px;
+      border-radius: 4px;
+      background: var(--bg-page);
+      display: flex;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .logo-naranja { flex: 0 0 35%; background: var(--naranja); }
+    .logo-blanco { flex: 0 0 65%; background: #ffffff; }
+
+    h1 { font-size: 1.2rem; line-height: 1.2; color: var(--texto-principal); }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: var(--texto-secundario);
+      margin-top: 2px;
+    }
+
+    .firma {
+      font-size: 0.85rem;
+      color: var(--texto-secundario);
+      margin-top: 2px;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--borde-suave);
+      margin: 10px 0 12px;
+    }
+
+    .linea-contacto {
+      display: flex;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--texto-secundario);
+      margin-bottom: 6px;
+      gap: 8px;
+      word-break: break-word;
+    }
+
+    .icono { width: 20px; text-align: center; flex-shrink: 0; }
+
+    .linea-contacto a {
+      color: var(--texto-secundario);
+      text-decoration: none;
+    }
+
+    .botones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 14px;
+    }
+
+    .boton {
+      flex: 1 1 45%;
+      border-radius: 999px;
+      border: 1px solid var(--borde-suave);
+      padding: 7px 6px;
+      font-size: 0.8rem;
+      text-align: center;
+      text-decoration: none;
+      color: var(--texto-principal);
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .boton span.emoji { font-size: 1rem; }
+
+    .boton:hover {
+      background: #fff3e6;
+      border-color: rgba(245, 122, 31, 0.4);
+    }
+
+    .oficinas-titulo {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--texto-principal);
+      margin-bottom: 4px;
+    }
+
+    .oficinas {
+      font-size: 0.8rem;
+      color: var(--texto-secundario);
+      line-height: 1.4;
+    }
+
+    .oficinas p { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top-row">
+      <div class="logo">
+        <div class="logo-naranja"></div>
+        <div class="logo-blanco"></div>
+      </div>
+      <div>
+        <h1>Rodrigo Leandro Gonzalez</h1>
+        <p class="subtitle">Abogado especializado en Derecho Penal</p>
+        <p class="firma">Estudio Juridico Gonzalez & Gonzalez</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="linea-contacto">
+      <span class="icono">📧</span>
+      <a href="mailto:gonzalezrl@pm.me">gonzalezrl@pm.me</a>
+    </div>
+
+    <div class="linea-contacto">
+      <span class="icono">📞</span>
+      <a href="tel:+541160972412">11 6097 2412</a>
+    </div>
+
+    <div class="linea-contacto">
+      <span class="icono">📷</span>
+      <a href="https://www.instagram.com/drrodrigogonzalez" target="_blank">@drrodrigogonzalez</a>
+    </div>
+
+    <div class="linea-contacto">
+      <span class="icono">💼</span>
+      <a href="https://www.linkedin.com/in/rodrigo-leandro-gonzalez-82bb66324" target="_blank">rodrigo-leandro-gonzalez-82bb66324</a>
+    </div>
+
+    <div class="botones">
+      <a class="boton" href="tel:+541160972412"><span class="emoji">📞</span> Llamar</a>
+      <a class="boton" href="https://wa.me/541160972412" target="_blank"><span class="emoji">💬</span> WhatsApp</a>
+      <a class="boton" href="mailto:gonzalezrl@pm.me"><span class="emoji">✉️</span> Correo</a>
+      <a class="boton" href="https://maps.app.goo.gl/FooQUQ71ByVXS8EE8?g_st=iw" target="_blank"><span class="emoji">📍</span> Ubicación</a>
+    </div>
+
+    <div class="oficinas-titulo">Oficinas:</div>
+    <div class="oficinas">
+      <p>• Distrito Quartier – Comodoro Pedro Zanni 351, Loft 101 Sur, CABA</p>
+      <p>• Tucuman – Tucuman 1367, Piso 2 “B”, CABA</p>
+    </div>
+  </div>
+</body>
+</html>
