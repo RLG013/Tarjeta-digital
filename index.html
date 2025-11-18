@@ -48,7 +48,7 @@
       border: 1px solid var(--borde-suave);
     }
 
-    /* Logo rectangular naranja/blanco sin bordes negros */
+    /* Logo rectangular naranja/blanco sin bordes negros NI texto */
     .logo-wrapper {
       display: flex;
       justify-content: center;
@@ -75,14 +75,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    .logo-right span {
-      font-weight: 600;
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #444444;
+      /* Sin texto dentro: queda el bloque blanco limpio */
     }
 
     h1 {
@@ -225,9 +218,7 @@
     <div class="logo-wrapper">
       <div class="logo">
         <div class="logo-left"></div>
-        <div class="logo-right">
-          <span>Gonzalez &amp; Gonzalez</span>
-        </div>
+        <div class="logo-right"></div>
       </div>
     </div>
 
